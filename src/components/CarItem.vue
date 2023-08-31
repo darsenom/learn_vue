@@ -9,12 +9,12 @@ const car = defineProps({
 
 <template>
     <div class="car">
-      <img :src="car.image" alt="car" />
-      <h2>{{ car.brand }}</h2>
-      <p>Цена: {{ car.price }}</p>
-      <p>Год выпуска: {{ car.year }}</p>
-      <p>Объем двигателя: {{ car.volume }}</p>
-      <p>Цвет: {{ car.color }}</p>
+      <img :src="this.car.image" alt="car" />
+      <h2>{{ this.car.brand }}</h2>
+      <p>Цена: {{ this.car.price }}</p>
+      <p>Год выпуска: {{ this.car.year }}</p>
+      <p>Объем двигателя: {{this.car.volume }}</p>
+      <p>Цвет: {{ this.car.color }}</p>
     </div>
   </template>
 
