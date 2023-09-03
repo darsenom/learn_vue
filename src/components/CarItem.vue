@@ -28,7 +28,7 @@ function changeColor(color) {
 } 
 </script>
 <template>
-  <Card>
+  <Card style="width: 30em; " class="card">
     <template #header>
       <img :src="carRemake.image" alt="car" class="car-image" />
     </template>
@@ -40,16 +40,25 @@ function changeColor(color) {
       <p :style="`color: ${carRemake.color}`">Цвет: {{ carRemake.color }}</p>
     </template>
     <template #footer>
-   
-        <Chip v-if="Number(carRemake.price.slice(0, -1)) > 1000000" label="Дорогой" icon="pi pi-apple" />
-        <Chip v-else-if="Number(carRemake.year) <= 1960" label="Старый" icon="pi pi-history" />
-        <Chip v-else label="Скучный" icon="pi-briefcase" />
-        <Chip v-if="changeColor(carRemake.color)" label="Конченный цвет" icon="pi pi-eye-slash"/>
-      
+
+      <Chip v-if="Number(carRemake.price.slice(0, -1)) > 1000000" label="Дорогой" icon="pi pi-apple" />
+      <Chip v-else-if="Number(carRemake.year) <= 1960" label="Старый" icon="pi pi-history" />
+      <Chip v-else label="Скучный" icon="pi-briefcase" />
+      <Chip v-if="changeColor(carRemake.color)" label="Конченный цвет" icon="pi pi-eye-slash" />
+
     </template>
   </Card>
 </template>
 
 <style scoped>
+.card {
+  margin: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+}
 
+.car-image {
+  width: 250px;
+  height: 150px;
+}
 </style>

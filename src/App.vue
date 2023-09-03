@@ -1,11 +1,18 @@
 <script setup>
-import ButtonDelete from '@/components/ButtonDelete.vue';
+
 import CarList from '@/components/CarList.vue';
+import Navbar from '@/components/Navbar.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
-    <ButtonDelete />
+ 
+    <Navbar />
     <CarList />
+    <Footer />
 </template>
 
-<style scoped></style>
+<style scoped>
+
+
+</style>
