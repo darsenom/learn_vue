@@ -16,8 +16,8 @@
   
 <style>
 .footer {
-    background-color: #f8f9fa; 
-    color: #495057; 
+    background-color: #eff3f8 ; 
+    color: #708da9 ; 
     padding: 40px 0; 
     margin-top: 20px;
     border: 1px solid #dee2e6;

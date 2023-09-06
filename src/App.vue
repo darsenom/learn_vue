@@ -1,7 +1,7 @@
 <script setup>
 
 import CarList from '@/components/CarList.vue';
-import Navbar from '@/components/Navbar.vue';
+import Navbar from '@/components/loyauts/Navbar.vue';
 import Footer from '@/components/Footer.vue';
 import CarTable from '@/components/CarTable.vue';
 
@@ -37,14 +37,10 @@ const cars = [
 </script>
 
 <template>
- 
     <Navbar />
-    <CarList :cars="cars"/>
-    <CarTable :cars="cars"/>
+    <CarList :cars="cars" />
+    <CarTable :cars="cars" />
     <Footer />
 </template>
 
-<style scoped>
-
-
-</style>
+<style scoped></style>
